@@ -1,16 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  left:0;
+  flex-direction: row;
+  margin: 10px 50px;
+}
+
+header {
+  display: flex;
+  background-image: linear-gradient(to right, white, rgb(222, 222, 222));
+}
+
+.name {
+  font-size: 28px;
+  margin: 30px;
+  padding-left: 40px;
+}
+
+.hello {
+  margin: 20px;
+  align-items: top;
+  justify-content: left;
+  width: 50vw;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  
+}
+
+.hello.image {
+  margin: 20px;
+  align-items: top;
+  justify-content: left;
+  max-width: 25vw;
+  max-height: 35vh;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.social-links {
+  margin-left: auto;
+  flex-direction: row;
+  align-self: center;
+  padding-right: 40px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30%;
 }
